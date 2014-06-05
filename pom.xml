@@ -177,7 +177,7 @@
         <dependency>
             <groupId>org.atmosphere</groupId>
             <artifactId>atmosphere-runtime</artifactId>
-            <version>1.0.8</version>
+            <version>2.1.5</version>
         </dependency>
         
         <dependency>
@@ -263,14 +263,14 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <jsfVersion>Mojarra-2.2.4</jsfVersion>
-                <primefacesVersion>PrimeFaces-3.5</primefacesVersion>
+                <jsfVersion>2.2.6</jsfVersion>
+                <primefacesVersion>5.0</primefacesVersion>
             </properties>
             <dependencies>
                 <dependency>
                     <groupId>org.primefaces</groupId>
                     <artifactId>primefaces</artifactId>
-                    <version>3.5</version>
+                    <version>${primefacesVersion}</version>
                 </dependency>
                 <dependency>
                     <groupId>org.primefaces</groupId>
@@ -280,7 +280,7 @@
                 <dependency>
                     <groupId>org.glassfish</groupId>
                     <artifactId>javax.faces</artifactId>
-                    <version>2.2.4</version>
+                    <version>${jsfVersion}</version>
                 </dependency>
             </dependencies>
         </profile>
@@ -394,8 +394,7 @@
                     </plugin>
                 </plugins>
             </build>
-        </profile>
-        
+        </profile>        
         
         <!-- WINDOWS TESTS -->
         <profile>
